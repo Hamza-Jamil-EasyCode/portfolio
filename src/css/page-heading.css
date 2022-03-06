@@ -1,0 +1,20 @@
+.page-heading {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-heading > h1 {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: var(--secondary_font);
+}
+
+.page-heading > hr {
+  color: blue;
+  width: 100px;
+}

@@ -1,0 +1,41 @@
+.about > div > div {
+  max-width: 100%;
+}
+.about > div > div > img {
+  padding: 2rem 2rem 0;
+  width: 100%;
+  position: relative;
+  animation: up-down 2.5s ease-in-out infinite;
+}
+
+.about > div > div + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.about > div > div > h1 {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  font-family: var(--font_1);
+  text-align: justify;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about > div > div > h1 {
+    margin: 0 0 5rem;
+  }
+}
