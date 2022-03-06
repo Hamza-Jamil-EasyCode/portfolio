@@ -1,0 +1,26 @@
+@import 'css/index.css';
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Fredoka+One&family=Montserrat:wght@500&family=PT+Sans+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=DM+Sans:wght@700&family=Fredoka+One&family=Montserrat:wght@500&family=PT+Sans+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=DM+Sans:wght@700&family=Fredoka+One&family=Montserrat:wght@500&family=PT+Sans+Narrow&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=DM+Sans:wght@700&family=Fredoka+One&family=Merriweather+Sans:wght@600&family=Montserrat:wght@500&family=PT+Sans+Narrow&family=Rubik:wght@300&display=swap');
+
+
+body, html, #root {
+    height: 100%;
+}
+
+:root {
+    --footerColor: rgb(164, 164, 255);
+    --topNavBgColor: #f3f3f3;
+    --primaryFontColor: #3498db;
+
+    --primary_font: 'Roboto Slab', serif;
+    --secondary_font: 'Bakbak One', cursive;
+
+    --font_1: 'Montserrat', sans-serif;
+    --font_2: 'DM Sans', sans-serif;
+    --font_3: 'Anton', sans-serif;
+    --font_3: 'Rubik', sans-serif;
+}

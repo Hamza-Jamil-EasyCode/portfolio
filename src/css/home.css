@@ -1,0 +1,126 @@
+.home {
+  height: calc(100vh - 94px);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-bgImg {
+  max-width: 500px;
+}
+
+.home-bgImg > img {
+  width: 100%;
+  position: relative;
+  animation: up-down 2.5s ease-in-out infinite;
+}
+
+.home-content {
+  padding : 0 0 7rem;
+}
+
+.home-content > h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: var(--secondary_font);
+}
+
+.home-content > h1 + h1 {
+  color: var(--primaryFontColor);
+}
+
+.home-content > p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #7db428;
+  margin: 0 0 2rem;
+  font-family: var(--font_2);
+}
+
+.home-content > .get-started-btn {
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  border: 1px solid var(--primaryFontColor);
+  border-radius: 5px;
+  color: var(--primaryFontColor);
+  position: relative;
+  font-family: var(--font_2);
+  z-index: 1;
+}
+
+.home-content > .get-started-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  z-index: -1;
+  background-color: var(--primaryFontColor);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 300ms ease-in-out;
+}
+
+.home-content > .get-started-btn:hover::before,
+.home-content > .get-started-btn:focus::before {
+  transform: scaleY(1);
+}
+
+.home-content > .get-started-btn:hover,
+.home-content > .get-started-btn:focus {
+  color: white;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-bgImg {
+    max-width: 400px;
+  }
+
+  .home-content > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-bgImg {
+    max-width: 350px;
+  }
+
+  .home-content > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .home {
+    margin: 2rem 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .home-content {
+    margin: 2rem 0 0;
+    text-align: center;
+  }
+
+  .home-content > p {
+    margin: 0.5rem 0 2rem;
+  }
+}

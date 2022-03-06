@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--primaryFontColor);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  border: 1px solid rgb(122, 122, 122);
+  /* border-radius: 2rem 2rem 0 0; */
+  box-shadow: 0 0 5px 0 black;
+  text-align: center;
+  color: white;
+  font-family: var(--font_2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

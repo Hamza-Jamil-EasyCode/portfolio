@@ -1,0 +1,41 @@
+.services {
+  padding: 0 0 3.5rem;
+}
+
+.services > div > div {
+  padding: 1rem 0.5rem;
+  margin: 0;
+}
+
+/* .services > div {
+} */
+
+.services > div > div > .service_card {
+  padding: 1rem 0.5rem;
+  border: 3px solid rgb(129, 140, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  position: relative;
+  text-align: center;
+  height: 140px;
+}
+
+.services > div > div > .service_card:hover {
+  border: 3px solid rgb(121, 192, 28);
+  box-shadow: 1px 1px 8px 1px rgb(156, 156, 156);
+  color: var(--primaryFontColor);
+}
+
+.services > div > div > .service_card > h1 {
+  font-size: 1.3rem;
+  font-family: var(--font_2);
+}
+
+.services > div > div > .service_card > p {
+  font-size: 0.8rem;
+  font-family: var(--font_1);
+}
